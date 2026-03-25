@@ -4,369 +4,1603 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Nurul Hadi - Software Engineer</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Nurul Hadi - Founder | AI Automation Platform</title>
+  <meta name="description" content="Founder of Amanah Agent AI - building no-code AI automation platform with 8 integrated products. 13+ years in software engineering.">
+  <meta name="keywords" content="Nurul Hadi, Amanah Agent AI, Founder, AI Automation, No-Code, Software Engineer">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Professional Fonts - Inter + Plus Jakarta Sans -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: EasyFolio
-  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
-  * Updated: Feb 21 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* ========================================
+       PROFESSIONAL DESIGN SYSTEM
+       Matching Amanah Agent Marketing Site
+       ======================================== */
+
+    :root {
+      /* Primary Colors */
+      --primary-gradient: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+      --primary: #2563EB;
+      --primary-secondary: #3B82F6;
+      --primary-tertiary: #06B6D4;
+
+      /* Text Colors */
+      --text-primary: #0F172A;
+      --text-secondary: #334155;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+
+      /* Surface Colors */
+      --surface: #FFFFFF;
+      --surface-alt: #F8FAFC;
+      --surface-tertiary: #F1F5F9;
+
+      /* Border Colors */
+      --border: #E2E8F0;
+      --border-light: #F1F5F9;
+      --border-focus: #2563EB;
+
+      /* Shadows */
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.10);
+      --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.12);
+      --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+      /* Border Radius */
+      --radius-sm: 0.5rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.5rem;
+      --radius-2xl: 2rem;
+      --radius-full: 9999px;
+
+      /* Spacing */
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 1.5rem;
+      --spacing-lg: 2rem;
+      --spacing-xl: 3rem;
+      --spacing-2xl: 4rem;
+      --spacing-3xl: 6rem;
+    }
+
+    /* ========================================
+       BASE STYLES
+       ======================================== */
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #EBF3FE 0%, #E4EEFB 15%, #F0F5FF 35%, #F5F9FF 50%, #F0F5FF 65%, #EBF3FE 80%, #F5F9FF 100%);
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      min-height: 100vh;
+      color: var(--text-primary);
+      letter-spacing: -0.011em;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      color: var(--text-primary);
+    }
+
+    /* Gradient Text Utility */
+    .gradient-text {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ========================================
+       HEADER & NAVIGATION
+       ======================================== */
+
+    .header {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .header .navmenu .nav-link {
+      font-weight: 500;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 0.5rem 0.75rem;
+      transition: color 0.2s ease;
+    }
+
+    .header .navmenu .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary-gradient);
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .header .navmenu .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .header .navmenu .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .header .sitename {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    /* ========================================
+       HERO SECTION
+       ======================================== */
+
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #F0F6FF 0%, #E4EEFB 50%, #F0F5FF 100%);
+      padding: 6rem 0 4rem;
+    }
+
+    .hero-background {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.6;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .orb-1 {
+      width: 500px;
+      height: 500px;
+      background: rgba(37, 99, 235, 0.15);
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .orb-2 {
+      width: 350px;
+      height: 350px;
+      background: rgba(6, 182, 212, 0.12);
+      top: 40%;
+      right: 5%;
+      animation-delay: 2s;
+    }
+
+    .orb-3 {
+      width: 280px;
+      height: 280px;
+      background: rgba(59, 130, 246, 0.1);
+      bottom: 20%;
+      left: 10%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) translateX(-50%);
+      }
+      50% {
+        transform: translateY(-30px) translateX(-50%);
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-badge svg {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-subtitle strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary-gradient);
+      color: white;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text-primary);
+      border: 2px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      background: var(--surface-alt);
+      transform: translateY(-2px);
+      color: var(--text-primary);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: center;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-image {
+      display: none;
+    }
+
+    /* ========================================
+       SECTION STYLES
+       ======================================== */
+
+    .section {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .section.light-background {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-title p {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .title-shape {
+      display: none;
+    }
+
+    /* ========================================
+       ABOUT SECTION
+       ======================================== */
+
+    .about-content {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-content .subtitle {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.1));
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+
+    .about-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .about-content p.lead {
+      font-size: 1.125rem;
+      line-height: 1.7;
+    }
+
+    .remote-work-highlights {
+      background: var(--surface-alt);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .remote-work-highlights h4 {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    .remote-work-highlights ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .remote-work-highlights li {
+      padding: 0.5rem 0;
+      color: var(--text-secondary);
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-item .label {
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .info-item .value {
+      font-weight: 500;
+      color: var(--text-primary);
+      text-align: right;
+    }
+
+    /* ========================================
+       SKILLS SECTION
+       ======================================== */
+
+    .skill-box {
+      background: white;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .skill-box:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .skill-box:hover::before {
+      opacity: 1;
+    }
+
+    .skill-box h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-box p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-box .progress {
+      height: 8px;
+      background: var(--surface-tertiary);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .skill-box .progress-bar {
+      height: 100%;
+      background: var(--primary-gradient);
+      border-radius: var(--radius-full);
+    }
+
+    /* ========================================
+       RESUME SECTION
+       ======================================== */
+
+    .resume-wrapper {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .resume-block h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .resume-block .lead {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-left: 2px solid var(--surface-tertiary);
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+      border-left-color: transparent;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -7px;
+      top: 0;
+      width: 12px;
+      height: 12px;
+      background: var(--primary-gradient);
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    .timeline-left {
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-left .company {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .timeline-left .period {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-right .position {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-right .description {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+    }
+
+    .timeline-right ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .timeline-right li {
+      padding: 0.25rem 0;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      position: relative;
+      padding-left: 1.25rem;
+    }
+
+    .timeline-right li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tech-stack .badge {
+      background: var(--surface-alt);
+      color: var(--text-secondary);
+      padding: 0.375rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+    }
+
+    /* ========================================
+       PORTFOLIO SECTION
+       ======================================== */
+
+    .portfolio-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: white;
+      border: 2px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .filter-btn i {
+      font-size: 1rem;
+    }
+
+    /* Category-specific colors */
+    .filter-btn[data-filter="all"] {
+      border-color: #CBD5E1;
+    }
+    .filter-btn[data-filter="all"]:hover,
+    .filter-btn[data-filter="all"].active {
+      background: linear-gradient(135deg, #64748B, #475569);
+      color: white;
+      border-color: transparent;
+    }
+
+    .filter-btn[data-filter="amanah"] {
+      border-color: #BFDBFE;
+    }
+    .filter-btn[data-filter="amanah"]:hover,
+    .filter-btn[data-filter="amanah"].active {
+      background: linear-gradient(135deg, #2563EB, #3B82F6);
+      color: white;
+      border-color: transparent;
+    }
+
+    .filter-btn[data-filter="bpk"] {
+      border-color: #A7F3D0;
+    }
+    .filter-btn[data-filter="bpk"]:hover,
+    .filter-btn[data-filter="bpk"].active {
+      background: linear-gradient(135deg, #10B981, #34D399);
+      color: white;
+      border-color: transparent;
+    }
+
+    .filter-btn[data-filter="commercial"] {
+      border-color: #FDE68A;
+    }
+    .filter-btn[data-filter="commercial"]:hover,
+    .filter-btn[data-filter="commercial"].active {
+      background: linear-gradient(135deg, #F59E0B, #FBBF24);
+      color: white;
+      border-color: transparent;
+    }
+
+    /* Portfolio Cards */
+    .portfolio-card {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      height: 100%;
+    }
+
+    .portfolio-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+    }
+
+    .portfolio-card:hover {
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+
+    .portfolio-card:hover::before {
+      opacity: 1;
+    }
+
+    .portfolio-image {
+      position: relative;
+      margin-bottom: 1rem;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .portfolio-image img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-image img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox link styling */
+    .portfolio-lightbox {
+      display: block;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .portfolio-lightbox::after {
+      content: '\F443';
+      font-family: 'bootstrap-icons';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+
+    .portfolio-image:hover .portfolio-lightbox::after {
+      opacity: 1;
+    }
+
+    .portfolio-placeholder {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+    }
+
+    .portfolio-placeholder .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .portfolio-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-placeholder h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .project-type {
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+
+    /* Category Badge */
+    .category-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .badge-amanah {
+      background: linear-gradient(135deg, #2563EB, #3B82F6);
+      color: white;
+    }
+
+    .badge-bpk {
+      background: linear-gradient(135deg, #10B981, #34D399);
+      color: white;
+    }
+
+    .badge-commercial {
+      background: linear-gradient(135deg, #F59E0B, #FBBF24);
+      color: white;
+    }
+
+    .portfolio-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .portfolio-content h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+      transition: color 0.2s;
+    }
+
+    .portfolio-card:hover .portfolio-content h3 {
+      color: var(--primary);
+    }
+
+    .portfolio-content .client {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-content .description {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .portfolio-content .features {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .portfolio-content .features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      margin-bottom: 0.375rem;
+    }
+
+    .portfolio-content .features i {
+      color: #16A34A;
+      flex-shrink: 0;
+    }
+
+    .portfolio-content .btn-outline-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .portfolio-content .btn-outline-primary:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* ========================================
+       CERTIFICATIONS SECTION
+       ======================================== */
+
+    .certifications-wrapper {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .certification-card {
+      background: var(--surface-alt);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .certification-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .certification-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .certification-content {
+      padding: 1rem;
+    }
+
+    .certification-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .certification-content p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .certificate-link {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    /* ========================================
+       SERVICES SECTION
+       ======================================== */
+
+    .service-card {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 3rem;
+      height: 3rem;
+      background: var(--primary-gradient);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-features i {
+      color: #16A34A;
+    }
+
+    /* ========================================
+       FAQ SECTION
+       ======================================== */
+
+    .faq-container {
+      background: white;
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 1rem 0;
+      margin: 0;
+      position: relative;
+      padding-right: 2rem;
+    }
+
+    .faq-content {
+      padding: 0 0 1rem 0;
+      color: var(--text-secondary);
+      font-size: 0.9375rem;
+    }
+
+    .faq-toggle {
+      position: absolute;
+      right: 0;
+      top: 1rem;
+      color: var(--text-muted);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(90deg);
+    }
+
+    /* ========================================
+       CONTACT SECTION
+       ======================================== */
+
+    .contact-section {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .contact-section .section-title h2 {
+      color: white;
+    }
+
+    .contact-section .section-title p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact-section .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-category {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section .display-5 {
+      color: white;
+      font-weight: 700;
+    }
+
+    .contact-section .lead {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1rem;
+    }
+
+    .info-item i {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .timezone-info h5 {
+      color: white;
+      font-weight: 600;
+    }
+
+    .timezone-info p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+
+    .footer {
+      background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 3rem 0 2rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.7);
+      transition: color 0.2s;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    /* ========================================
+       RESPONSIVE DESIGN
+       ======================================== */
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 0 3rem;
+        min-height: auto;
+      }
+
+      .hero-stats {
+        gap: 2rem;
+      }
+
+      .stat-value {
+        font-size: 2rem;
+      }
+
+      .portfolio-filters {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 1rem;
+      }
+
+      .filter-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .section {
+        padding: 3rem 0;
+      }
+    }
+
+    /* ========================================
+       UTILITIES
+       ======================================== */
+
+    .d-none { display: none !important; }
+    .d-block { display: block !important; }
+    .d-flex { display: flex !important; }
+    .flex-column { flex-direction: column !important; }
+    .align-items-center { align-items: center !important; }
+    .justify-content-center { justify-content: center !important; }
+    .justify-content-between { justify-content: space-between !important; }
+    .gap-1 { gap: 0.25rem !important; }
+    .gap-2 { gap: 0.5rem !important; }
+    .gap-3 { gap: 0.75rem !important; }
+    .gap-4 { gap: 1rem !important; }
+    .text-center { text-align: center !important; }
+    .mb-2 { margin-bottom: 0.5rem !important; }
+    .mb-3 { margin-bottom: 1rem !important; }
+    .mb-4 { margin-bottom: 1.5rem !important; }
+    .mb-5 { margin-bottom: 2rem !important; }
+    .mt-3 { margin-top: 1rem !important; }
+    .mt-4 { margin-top: 1.5rem !important; }
+    .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+    .py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+    .pt-4 { padding-top: 1.5rem !important; }
+    .pb-2 { padding-bottom: 0.5rem !important; }
+  </style>
 </head>
 
 <body class="index-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Nurul Hadi</h1>
+        <h1 class="sitename">Nurul Hadi</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
-          <ul>
-              <li><a href="#hero" class="nav-link">Home</a></li>
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#resume" class="nav-link">Resume</a></li>
-              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-              <li><a href="#services" class="nav-link">Services</a></li>                     
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <ul>
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-  </div>
+    </div>
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="hero-content">
-              <h1>Senior Software Engineer</h1>
-              <p class="lead">Building enterprise-level applications remotely with a focus on clean, scalable, and maintainable code</p>
-              
-              <div class="remote-work-badge">
-                <i class="bi bi-globe2"></i>
-                <span>Available for Remote Work Worldwide</span>
-                <div class="timezone-info">
-                  <i class="bi bi-clock"></i> Flexible Hours | UTC+7
-                </div>
-              </div>
+      <div class="hero-background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
 
-              <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Let's Connect</a>
-              </div>
+      <div class="container" data-aos="fade-up">
+        <div class="text-center">
 
-              <div class="stats-container">
-                <div class="stat-item">
-                  <h3>10+</h3>
-                  <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                  <h3>20+</h3>
-                  <p>Projects Delivered</p>
-                </div>
-                <div class="stat-item">
-                  <h3>Global</h3>
-                  <p>Remote Work</p>
-                </div>
-              </div>
-            </div>
+          <!-- Badge -->
+          <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+            <svg fill="currentColor" viewBox="0 0 20 20">
+              <path d="M12 2L13.09 8.26L18 6L14.74 10.91L21 12L14.74 13.09L18 18L13.09 15.74L12 22L10.91 15.74L6 18L9.26 13.09L3 12L9.26 10.91L6 6L10.91 8.26L12 2Z"/>
+            </svg>
+            <span>Available for Remote Work Worldwide</span>
           </div>
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/hero-coding.svg" alt="Software Development Illustration" class="coding-illustration">
+
+          <!-- Main Headline -->
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+            Founder &nbsp;
+            <span class="gradient-text">AI Automation Pioneer</span>
+          </h1>
+
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+            Building <strong>Amanah Agent AI</strong> - an industry-agnostic no-code platform
+            with <strong>8 integrated products</strong> for business transformation.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-ctas" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://amanahagent.cloud" target="_blank" class="btn btn-primary">
+              Visit Amanah Agent AI
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+            <a href="#portfolio" class="btn btn-secondary">
+              View Projects
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+            <div class="stat-item">
+              <span class="stat-value">13+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">8</span>
+              <span class="stat-label">AI Products</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Founder</span>
+              <span class="stat-label">Amanah Agent AI</span>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="about section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
+    <section id="about" class="section light-background">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>Passionate software engineer with expertise in enterprise application development and modern technologies</p>
         </div>
-        <p>Passionate software engineer with expertise in enterprise application development and modern technologies</p>
-      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-          <div class="col-lg-12" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
               <span class="subtitle">About Me</span>
 
-              <h2>Senior Software Engineer & Full Stack Developer</h2>
+              <h2>Founder | AI Automation Pioneer</h2>
 
-              <p class="lead mb-4">Specialized in building enterprise-level applications, microservices, and cloud-native solutions. Experienced in .NET Core, C#, and modern JavaScript frameworks with a strong focus on clean code and software architecture.</p>
+              <p class="lead">
+                Currently building <strong>Amanah Agent AI</strong> - an industry-agnostic no-code AI automation platform with 8 integrated products. With 13+ years in software engineering, I specialize in AI/LLM integration, no-code platforms, and scalable system architecture.
+              </p>
 
-              <p class="mb-4">I possess a deep understanding of software architectural patterns, microservices, and SOLID development principles, ensuring that I write clean, scalable, and maintainable code. Committed to staying updated with the latest technologies, I excel in creating secure and efficient web APIs and data services that enhance operational efficiency.</p>
+              <p>
+                Previously led engineering teams at CargoERP Singapore and Ent-Vision, delivering enterprise solutions. Now passionate about democratizing AI automation for businesses of all sizes through our comprehensive platform.
+              </p>
 
-              <div class="remote-work-highlights mb-4">
-                <h4>Remote Work Experience</h4>
+              <div class="remote-work-highlights">
+                <h4>Amanah Agent AI - 8 Products</h4>
                 <ul>
-                  <li>Currently working full-time remotely for a World Wide tech company</li>
-                  <li>Experienced in cross-cultural remote collaboration</li>
-                  <li>Proven track record of delivering projects remotely</li>
-                  <li>Flexible working hours aligned with Taiwan time zone (UTC+8)</li>
+                  <li><strong>Mobile</strong> - Cross-platform AI agent management (iOS & Android)</li>
+                  <li><strong>Notetaker</strong> - AI meeting transcription with automatic summaries</li>
+                  <li><strong>Sites</strong> - No-code landing page builder (SEO optimized)</li>
+                  <li><strong>CRM</strong> - Enterprise ticketing with SLA tracking</li>
+                  <li><strong>DataStudio</strong> - AI Natural Language to SQL platform</li>
+                  <li><strong>Extension</strong> - Browser-based AI document editing</li>
+                  <li><strong>Documents</strong> - AI document generator (like Gamma.app)</li>
+                  <li><strong>HumanOS</strong> - AI HRMS with burnout detection</li>
                 </ul>
               </div>
 
               <div class="personal-info">
-                <div class="row g-4">
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label">Current Role</span>
-                      <span class="value">Senior Software Engineer (Remote)</span>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label">Location</span>
-                      <span class="value">Working Remotely (UTC+7 to UTC+8)</span>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label">Email</span>
-                      <span class="value">nurul.hadi@outlook.com</span>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label">Specialization</span>
-                      <span class="value">Enterprise Application Development</span>
-                    </div>
-                  </div>
+                <div class="info-item">
+                  <span class="label">Current Role</span>
+                  <span class="value">Founder, Amanah Agent AI</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Location</span>
+                  <span class="value">Indonesia/Singapore (UTC+7)</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Email</span>
+                  <span class="value">nurulhadi@amanahagent.cloud</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Specialization</span>
+                  <span class="value">AI Automation & No-Code Platforms</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /About Section -->
+    </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4 skills-animation">
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>Technical expertise across AI, backend, frontend, and DevOps</p>
+        </div>
+
+        <div class="row g-4">
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
-              <h3>Backend</h3>
-              <p>.NET Core, C#, Java, Python, Go, PHP</p>
-              <span class="text-end d-block">95%</span>
+              <h3>AI & Automation</h3>
+              <p>LLM Integration, No-Code, RAG, Vector DB</p>
+              <span class="text-end d-block">90%</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
-              <h3>Frontend</h3>
-              <p>JavaScript, Vue.js, AngularJS, jQuery, Bootstrap</p>
-              <span class="text-end d-block">85%</span>
+              <h3>Backend</h3>
+              <p>Python, FastAPI, .NET Core, Go, PostgreSQL</p>
+              <span class="text-end d-block">95%</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box">
-              <h3>DevOps</h3>
-              <p>Docker, AWS, Azure, CI/CD, Git</p>
+              <h3>Frontend</h3>
+              <p>Next.js, React, TypeScript, Vue.js, Tailwind</p>
               <span class="text-end d-block">85%</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="skill-box">
-              <h3>Database</h3>
-              <p>MS SQL, NoSQL, Kafka, Elastic Search</p>
-              <span class="text-end d-block">90%</span>
+              <h3>DevOps</h3>
+              <p>Docker, AWS, GCP, CI/CD, Kubernetes</p>
+              <span class="text-end d-block">85%</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Skills Section -->
+    </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
+    <section id="resume" class="section light-background">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>Professional experience and educational background in software development</p>
         </div>
-        <p>Professional experience and educational background in software development</p>
-      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-12">
-            <div class="resume-wrapper">
-              <div class="resume-block" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="resume-wrapper" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-block">
                 <h2>Work Experience</h2>
                 <p class="lead">Track record of delivering high-quality software solutions and leading development teams</p>
 
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-left">
-                      <h4 class="company">CargoERP Pte Ltd</h4>
-                      <span class="period">Jan 2023 - Now</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Senior Software Engineer</h3>
-                      <p class="description">
-                        Leading development of enterprise-level logistics solutions. Key achievements:
-                      </p>
-                      <ul>
-                        <li>Led team in developing Boox Desk and Boox NoCode hybrid applications</li>
-                        <li>Spearheaded evaluation and adoption of emerging technologies</li>
-                        <li>Designed and implemented secure, high-performance web API data services</li>
-                        <li>Provided mentorship and technical guidance to junior developers</li>
-                      </ul>
-                      <div class="tech-stack mt-3">
-                        <span class="badge">.NET Core</span>
-                        <span class="badge">React</span>
-                        <span class="badge">Node.js</span>
-                        <span class="badge">PostgreSQL</span>
-                        <span class="badge">Docker</span>
-                        <span class="badge">AWS</span>
-                      </div>
-                    </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="timeline-left">
+                    <span class="company"><a href="https://amanahagent.cloud" target="_blank" style="color: inherit; text-decoration: none;">Amanah Agent AI</a></span>
+                    <span class="period">April 2025 - Present</span>
                   </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-left">
-                      <h4 class="company">Ent-Vision Pte Ltd</h4>
-                      <span class="period">Dec 2019 - Dec 2022</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Senior Software Engineer</h3>
-                      <p class="description">
-                        Led development of intelligent automation solutions. Notable projects:
-                      </p>
-                      <ul>
-                        <li>Developed Intelligent Process Automation for ship suppliers</li>
-                        <li>Built Master Data Platform for supply chain logistics</li>
-                        <li>Created TEHO Quotation Automation system</li>
-                        <li>Implemented Transport Management System</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="timeline-left">
-                      <h4 class="company">Badan Pemeriksa Keuangan</h4>
-                      <span class="period">Apr 2017 - Dec 2019</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Software Engineer</h3>
-                      <p class="description">
-                        Developed enterprise-level applications for government auditing. Key projects:
-                      </p>
-                      <ul>
-                        <li>Built Microservices API following enterprise architecture best practices</li>
-                        <li>Developed Monitoring LKPD web application</li>
-                        <li>Created Sistem Management Pemeriksaan portal</li>
-                        <li>Implemented Portal e-Audit web application</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-                    <div class="timeline-left">
-                      <h4 class="company">PT Sakura System Solution</h4>
-                      <span class="period">Jan 2016 - Apr 2017</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Software Engineer</h3>
-                      <p class="description">
-                        Developed HR systems and applications. Key responsibilities:
-                      </p>
-                      <ul>
-                        <li>Designed and developed web-based HRD systems</li>
-                        <li>Implemented database design and optimization</li>
-                        <li>Created RESTful APIs for system integration</li>
-                        <li>Ensured security best practices in applications</li>
-                      </ul>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Founder</h3>
+                    <p class="description">Building industry-agnostic no-code AI automation platform with 8 integrated products</p>
+                    <ul>
+                      <li><strong>Mobile</strong> - Cross-platform AI agent management (iOS & Android) with biometric auth</li>
+                      <li><strong>Notetaker</strong> - AI meeting transcription (Zoom/Meet/Teams integration)</li>
+                      <li><strong>Sites</strong> - No-code landing page builder with 10+ sections, SEO optimized</li>
+                      <li><strong>CRM</strong> - Enterprise ticketing system with SLA tracking and workflows</li>
+                      <li><strong>DataStudio</strong> - AI Natural Language to SQL platform with two-way sync</li>
+                      <li><strong>Extension</strong> - Browser-based AI document editing for Office/Google Docs</li>
+                      <li><strong>Documents</strong> - AI document generator with 19+ content blocks</li>
+                      <li><strong>HumanOS</strong> - AI HRMS with burnout detection and attrition prediction</li>
+                    </ul>
+                    <div class="tech-stack">
+                      <span class="badge">Python</span>
+                      <span class="badge">FastAPI</span>
+                      <span class="badge">Next.js</span>
+                      <span class="badge">TypeScript</span>
+                      <span class="badge">PostgreSQL</span>
+                      <span class="badge">Docker</span>
+                      <span class="badge">LLM</span>
+                      <span class="badge">RAG</span>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
-                <h2>Certifications</h2>
-                <p class="lead">Strong technical background with focus on software development</p>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                  <div class="timeline-left">
+                    <span class="company">CargoERP Pte Ltd</span>
+                    <span class="period">2021 - April 2025</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Senior Software Engineer</h3>
+                    <p class="description">Led development of cloud-based ERP system for logistics and supply chain management in Singapore</p>
+                    <ul>
+                      <li>Designed and implemented scalable backend architecture using FastAPI and PostgreSQL</li>
+                      <li>Built real-time tracking system processing 10,000+ shipments daily</li>
+                      <li>Led team of 5 engineers in agile development sprints</li>
+                      <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                    </ul>
+                    <div class="tech-stack">
+                      <span class="badge">Python</span>
+                      <span class="badge">FastAPI</span>
+                      <span class="badge">PostgreSQL</span>
+                      <span class="badge">Redis</span>
+                      <span class="badge">Docker</span>
+                      <span class="badge">CI/CD</span>
+                    </div>
+                  </div>
+                </div>
 
-                <div class="timeline">
-  
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-left">
-                      <h4 class="company">Professional Skills</h4>
-                      <span class="period">2013 - Present</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Technical Expertise</h3>
-                      <ul>
-                        <li>Cloud Technologies (AWS, Azure)</li>
-                        <li>Containerization with Docker</li>
-                        <li>API Development & Integration</li>
-                        <li>Real-time Web Technologies</li>
-                        <li>Event-Driven Architecture</li>
-                      </ul>
-                    </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="timeline-left">
+                    <span class="company">Ent-Vision Pte Ltd</span>
+                    <span class="period">Dec 2019 - Dec 2022</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Senior Software Engineer</h3>
+                    <p class="description">Led development of intelligent automation solutions. Notable projects:</p>
+                    <ul>
+                      <li>Developed Intelligent Process Automation for ship suppliers</li>
+                      <li>Built Master Data Platform for supply chain logistics</li>
+                      <li>Created TEHO Quotation Automation system</li>
+                      <li>Implemented Transport Management System</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="timeline-left">
+                    <span class="company">Badan Pemeriksa Keuangan</span>
+                    <span class="period">Apr 2017 - Dec 2019</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Software Engineer</h3>
+                    <p class="description">Developed enterprise-level applications for government auditing. Key projects:</p>
+                    <ul>
+                      <li>Built Microservices API following enterprise architecture best practices</li>
+                      <li>Developed Monitoring LKPD web application</li>
+                      <li>Created Sistem Management Pemeriksaan portal</li>
+                      <li>Implemented Portal e-Audit web application</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                  <div class="timeline-left">
+                    <span class="company">PT Sakura System Solution</span>
+                    <span class="period">Jan 2016 - Apr 2017</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Software Engineer</h3>
+                    <p class="description">Developed HR systems and applications. Key responsibilities:</p>
+                    <ul>
+                      <li>Designed and developed web-based HRD systems</li>
+                      <li>Implemented database design and optimization</li>
+                      <li>Created RESTful APIs for system integration</li>
+                      <li>Ensured security best practices in applications</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -374,765 +1608,494 @@
           </div>
         </div>
       </div>
-    </section><!-- /Resume Section -->
+    </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Amanah AI products, BPK government projects, and commercial solutions</p>
         </div>
-        <p>Enterprise applications and solutions developed for BPK (Badan Pemeriksa Keuangan)</p>
-      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-12">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-block" data-aos="fade-up">
-                <h2>Enterprise Applications</h2>
-                <p class="lead">Projects developed for BPK (Badan Pemeriksa Keuangan) and Commercial Clients</p>
+        <!-- Project Categories -->
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">
+            <i class="bi bi-grid"></i>
+            <span>All Projects</span>
+          </button>
+          <button class="filter-btn" data-filter="amanah">
+            <i class="bi bi-stars"></i>
+            <span>Amanah AI</span>
+          </button>
+          <button class="filter-btn" data-filter="bpk">
+            <i class="bi bi-building"></i>
+            <span>BPK Projects</span>
+          </button>
+          <button class="filter-btn" data-filter="commercial">
+            <i class="bi bi-briefcase"></i>
+            <span>Commercial Projects</span>
+          </button>
+        </div>
 
-                <!-- Project Categories -->
-                <div class="portfolio-filters mb-4">
-                  <button class="filter-btn active" data-filter="all">
-                    <i class="bi bi-grid"></i>
-                    <span>All Projects</span>
-                  </button>
-                  <button class="filter-btn" data-filter="bpk">
-                    <i class="bi bi-building"></i>
-                    <span>BPK Projects</span>
-                  </button>
-                  <button class="filter-btn" data-filter="commercial">
-                    <i class="bi bi-briefcase"></i>
-                    <span>Commercial Projects</span>
-                  </button>
+        <div class="row g-4" id="portfolio-grid">
+          <!-- Amanah Agent AI - Mobile -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/mobile.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/mobile.png" alt="Mobile - AI Agent Management App" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Mobile</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">Cross-platform mobile app for managing AI agents anywhere with biometric authentication</p>
+                <div class="tech-stack">
+                  <span class="badge">iOS</span>
+                  <span class="badge">Android</span>
+                  <span class="badge">Biometric</span>
                 </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Real-time notifications</li>
+                  <li><i class="bi bi-check-circle"></i> Agent management on-the-go</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/mobile" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                <div class="row g-4">
-                  <!-- SIAP -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/siap.jpg" alt="SIAP (Sistem Aplikasi Pemeriksaan)" class="img-fluid">
-                        <div class="portfolio-overlay">
-                          <div class="overlay-content"> 
-                            <h4>Key Achievements</h4>
-                            <ul>
-                              <li>Reduced audit process time by 40%</li>
-                              <li>Improved document accuracy by 95%</li>
-                              <li>Enhanced team collaboration efficiency</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>SIAP (Sistem Aplikasi Pemeriksaan)</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Comprehensive audit management system for government financial oversight</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core 6.0</span>
-                          <span class="badge">SQL Server 2019</span>
-                          <span class="badge">Angular 14</span>
-                          <span class="badge">Microservices</span>
-                          <span class="badge">Docker</span>
-                          <span class="badge">Kubernetes</span>
-                        </div>
-                        <ul class="features">
-                          <li><i class="bi bi-check-circle"></i> Workflow-based audit process management</li>
-                          <li><i class="bi bi-check-circle"></i> Document management and version control</li>
-                          <li><i class="bi bi-check-circle"></i> Real-time collaboration tools</li>
-                          <li><i class="bi bi-check-circle"></i> Advanced reporting and analytics</li>
-                          <li><i class="bi bi-check-circle"></i> Role-based access control</li>
-                          <li><i class="bi bi-check-circle"></i> Audit trail and compliance tracking</li>
-                        </ul>
-                        <div class="project-metrics">
-                          <div class="metric">
-                            <span class="metric-value">40%</span>
-                            <span class="metric-label">Process Efficiency</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">95%</span>
-                            <span class="metric-label">Accuracy</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">1000+</span>
-                            <span class="metric-label">Active Users</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - Notetaker -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="150">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/notaker.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/notaker.png" alt="Notetaker - AI Meeting Transcription" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Notetaker</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">AI-powered meeting transcription with automatic summaries and action items extraction</p>
+                <div class="tech-stack">
+                  <span class="badge">Zoom</span>
+                  <span class="badge">Meet</span>
+                  <span class="badge">Teams</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Multi-platform capture</li>
+                  <li><i class="bi bi-check-circle"></i> AI-powered summaries</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/notetaker" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Monitoring LKPD -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/monitoring-lkpd.jpg" alt="Monitoring LKPD" class="img-fluid">
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Monitoring LKPD</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Financial report monitoring and analysis system</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core</span>
-                          <span class="badge">SQL Server</span>
-                          <span class="badge">Vue.js</span>
-                          <span class="badge">ElasticSearch</span>
-                        </div>
-                        <ul class="features">
-                          <li>Automated data collection and validation</li>
-                          <li>Real-time financial analysis</li>
-                          <li>Customizable dashboards</li>
-                          <li>Data visualization tools</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - Sites -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/site.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/site.png" alt="Sites - AI Landing Page Builder" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Sites</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">No-code builder for beautiful, branded AI agent landing pages</p>
+                <div class="tech-stack">
+                  <span class="badge">10+ Sections</span>
+                  <span class="badge">SEO</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Drag & drop builder</li>
+                  <li><i class="bi bi-check-circle"></i> Floating bubble preview</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/sites" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Portal LHR -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="400">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/portal-lhr.jpg" alt="Portal LHR" class="img-fluid">
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Portal LHR</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Public financial report portal and information system</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core</span>
-                          <span class="badge">SQL Server</span>
-                          <span class="badge">React</span>
-                          <span class="badge">Redis</span>
-                        </div>
-                        <ul class="features">
-                          <li>Public access to financial reports</li>
-                          <li>Advanced search capabilities</li>
-                          <li>Document download and sharing</li>
-                          <li>User feedback system</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - CRM -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="250">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/crm.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/crm.png" alt="CRM - Enterprise Ticketing System" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>CRM</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">Enterprise ticketing system with SLA tracking and approval workflows</p>
+                <div class="tech-stack">
+                  <span class="badge">Multi-channel</span>
+                  <span class="badge">SLA</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Multi-channel support</li>
+                  <li><i class="bi bi-check-circle"></i> SLA tracking</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/crm" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- SIPTL -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="500">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/siptl.jpg" alt="SIPTL" class="img-fluid">
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>SIPTL</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Integrated financial tracking and reporting system</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core</span>
-                          <span class="badge">SQL Server</span>
-                          <span class="badge">Angular</span>
-                          <span class="badge">SignalR</span>
-                        </div>
-                        <ul class="features">
-                          <li>Real-time financial tracking</li>
-                          <li>Automated report generation</li>
-                          <li>Multi-level approval workflow</li>
-                          <li>Audit trail and logging</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - DataStudio -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/datastudio.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/datastudio.png" alt="DataStudio - AI Natural Language to SQL" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>DataStudio</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">Query databases with plain English using AI. Two-way data sync with enterprise governance.</p>
+                <div class="tech-stack">
+                  <span class="badge">NL to SQL</span>
+                  <span class="badge">Two-Way Sync</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Natural Language to SQL</li>
+                  <li><i class="bi bi-check-circle"></i> Visual query builder</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/datastudio" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- WASMA -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="600">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/wasma.jpg" alt="Sistem Pengawasan Irtama (WASMA)" class="img-fluid">
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Sistem Pengawasan Irtama (WASMA)</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Supervision and monitoring system for government agencies</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core</span>
-                          <span class="badge">SQL Server</span>
-                          <span class="badge">Vue.js</span>
-                          <span class="badge">Kafka</span>
-                        </div>
-                        <ul class="features">
-                          <li>Performance monitoring dashboard</li>
-                          <li>Automated compliance checks</li>
-                          <li>Risk assessment tools</li>
-                          <li>Incident management system</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - Extension -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="350">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/extension.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/extension.png" alt="Extension - Browser AI Document Editor" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Extension</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">AI-powered browser extension for editing documents, summarizing pages, and chatting about any active content</p>
+                <div class="tech-stack">
+                  <span class="badge">Chrome</span>
+                  <span class="badge">Office</span>
+                  <span class="badge">Web</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Edit Word/Excel/PPT</li>
+                  <li><i class="bi bi-check-circle"></i> Summarize any page</li>
+                  <li><i class="bi bi-check-circle"></i> Ask about active page</li>
+                  <li><i class="bi bi-check-circle"></i> AI side panel chat</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/extension" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- SMP -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="700">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/smp.jpg" alt="SMP - Sistem Management Pemeriksaan" class="img-fluid">
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>SMP - Sistem Management Pemeriksaan</h3>
-                        <p class="client">BPK - Badan Pemeriksa Keuangan</p>
-                        <p class="description">Comprehensive audit management and workflow system</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core</span>
-                          <span class="badge">SQL Server</span>
-                          <span class="badge">React</span>
-                          <span class="badge">Docker</span>
-                        </div>
-                        <ul class="features">
-                          <li>End-to-end audit workflow</li>
-                          <li>Resource allocation and scheduling</li>
-                          <li>Document management system</li>
-                          <li>Performance analytics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - Documents -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/document.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/document.png" alt="Documents - AI Document Generator" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Documents</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">Create stunning documents, presentations, and reports with AI. Like Gamma.app</p>
+                <div class="tech-stack">
+                  <span class="badge">19+ Blocks</span>
+                  <span class="badge">PDF/DOCX</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Beautiful themes</li>
+                  <li><i class="bi bi-check-circle"></i> Export to multiple formats</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/documents" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- CargoERP Platform -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="700">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2193b0, #6dd5ed);">
-                          <div class="content">
-                            <div class="portfolio-icon">
-                              <i class="bi bi-box-seam"></i>
-                            </div>
-                            <h4>Boox Platform Suite</h4>
-                            <div class="project-type">Logistics & Supply Chain</div>
-                            <div class="tech-badges mt-3">
-                              <span class="tech-badge">Go</span>
-                              <span class="tech-badge">Vue.js</span>
-                              <span class="tech-badge">Electron</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="portfolio-overlay">
-                          <div class="overlay-content">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                              <li>Streamlined logistics operations by 60%</li>
-                              <li>Reduced processing time by 45%</li>
-                              <li>Enhanced supply chain visibility</li>
-                              <li>Automated 85% of manual processes</li>
-                              <li>Improved inventory accuracy by 95%</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>CargoERP Platform</h3>
-                        <p class="client">CargoERP Pte Ltd | Singapore</p>
-                        <p class="description">Comprehensive Omni-Channel logistics solutions enabling seamless fulfillment and international logistics operations</p>
-                        <div class="tech-stack">
-                          <span class="badge">Go 1.21</span>
-                          <span class="badge">Vue.js</span>
-                          <span class="badge">Electron JS</span>
-                          <span class="badge">DevExtreme</span>
-                          <span class="badge">SignalR</span>
-                          <span class="badge">HangFire</span>
-                        </div>
-                        <ul class="features">
-                          <li><i class="bi bi-check-circle"></i> Boox Desk: Hybrid application for operations automation</li>
-                          <li><i class="bi bi-check-circle"></i> Boox NoCode: Custom application builder platform</li>
-                          <li><i class="bi bi-check-circle"></i> Boox UiBuilder: Component creation system</li>
-                          <li><i class="bi bi-check-circle"></i> Boox Workflow: Dynamic workflow management</li>
-                        </ul>
-                        <div class="project-metrics">
-                          <div class="metric">
-                            <span class="metric-value">4</span>
-                            <span class="metric-label">Major Products</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">Global</span>
-                            <span class="metric-label">Deployment</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">Enterprise</span>
-                            <span class="metric-label">Scale</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Amanah Agent AI - HumanOS -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="amanah" data-aos="fade-up" data-aos-delay="450">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <a href="portofolio/hos.png" class="portfolio-lightbox" data-gallery="amanah-products">
+                  <img src="portofolio/hos.png" alt="HumanOS - AI HRMS and Workforce Analytics" class="img-fluid">
+                </a>
+                <div class="category-badge badge-amanah">Amanah AI</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>HumanOS</h3>
+                <p class="client">Amanah Agent AI</p>
+                <p class="description">AI-powered HRMS with burnout detection, attrition prediction, and productivity analytics</p>
+                <div class="tech-stack">
+                  <span class="badge">Burnout AI</span>
+                  <span class="badge">Analytics</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Burnout detection</li>
+                  <li><i class="bi bi-check-circle"></i> Attrition prediction</li>
+                </ul>
+                <a href="https://amanahagent.cloud/products/humanos" target="_blank" class="btn-outline-primary">
+                  View Product <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Ent-Vision -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="800">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
-                          <div class="content">
-                            <div class="portfolio-icon">
-                              <i class="bi bi-cpu"></i>
-                            </div>
-                            <h4>AI-Powered Solutions</h4>
-                            <div class="project-type">Enterprise Intelligence</div>
-                            <div class="tech-badges mt-3">
-                              <span class="tech-badge">.NET</span>
-                              <span class="tech-badge">AI/ML</span>
-                              <span class="tech-badge">Cloud</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="portfolio-overlay">
-                          <div class="overlay-content">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                              <li>90% automation in document processing</li>
-                              <li>75% reduction in manual data entry</li>
-                              <li>Real-time business insights</li>
-                              <li>98% accuracy in ML predictions</li>
-                              <li>50% faster decision making</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Ent-Vision Solutions</h3>
-                        <p class="client">Enterprise AI & Automation</p>
-                        <p class="description">Next-generation enterprise platform leveraging AI and machine learning for intelligent process automation</p>
-                        <div class="tech-stack">
-                          <span class="badge">.NET Core 7</span>
-                          <span class="badge">Angular 15</span>
-                          <span class="badge">TensorFlow</span>
-                          <span class="badge">PyTorch</span>
-                          <span class="badge">Azure ML</span>
-                        </div>
-                        <ul class="features">
-                          <li><i class="bi bi-check-circle"></i> AI-Powered Document Processing & OCR</li>
-                          <li><i class="bi bi-check-circle"></i> Intelligent Process Automation</li>
-                          <li><i class="bi bi-check-circle"></i> Predictive Analytics Engine</li>
-                          <li><i class="bi bi-check-circle"></i> Machine Learning Pipeline</li>
-                        </ul>
-                        <div class="project-metrics">
-                          <div class="metric">
-                            <span class="metric-value">90%</span>
-                            <span class="metric-label">Automation</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">98%</span>
-                            <span class="metric-label">ML Accuracy</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">24/7</span>
-                            <span class="metric-label">Availability</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <!-- SIAP -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="assets/img/project/siap.jpg" alt="SIAP" class="img-fluid">
+                <div class="category-badge badge-bpk">BPK</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>SIAP</h3>
+                <p class="client">Badan Pemeriksa Keuangan</p>
+                <p class="description">Comprehensive audit management system for government financial oversight</p>
+                <div class="tech-stack">
+                  <span class="badge">.NET Core</span>
+                  <span class="badge">SQL Server</span>
+                  <span class="badge">Angular</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> 40% process efficiency gain</li>
+                  <li><i class="bi bi-check-circle"></i> 95% document accuracy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Amanah Pro -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="900">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/amanah-pro.jpg" alt="Amanah Pro - Project Management & Accounting System" class="img-fluid">
-                        <div class="portfolio-overlay">
-                          <div class="overlay-content">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                              <li>Streamlined project workflows by 70%</li>
-                              <li>Reduced accounting processing time by 60%</li>
-                              <li>Improved project tracking efficiency</li>
-                              <li>Enhanced financial reporting accuracy</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Amanah Pro</h3>
-                        <p class="client">Project Management & Accounting System</p>
-                        <p class="description">Integrated project management and accounting solution providing comprehensive business process automation</p>
-                        <div class="tech-stack">
-                          <span class="badge">Go 1.21</span>
-                          <span class="badge">PostgreSQL</span>
-                          <span class="badge">Vue.js 3</span>
-                          <span class="badge">Redis</span>
-                          <span class="badge">Docker</span>
-                          <span class="badge">Kubernetes</span>
-                        </div>
-                        <ul class="features">
-                          <li><i class="bi bi-check-circle"></i> Project Planning & Tracking</li>
-                          <li><i class="bi bi-check-circle"></i> Resource Management</li>
-                          <li><i class="bi bi-check-circle"></i> Financial Management</li>
-                          <li><i class="bi bi-check-circle"></i> Real-time Reporting</li>
-                        </ul>
-                        <div class="project-metrics">
-                          <div class="metric">
-                            <span class="metric-value">70%</span>
-                            <span class="metric-label">Efficiency Gain</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">60%</span>
-                            <span class="metric-label">Time Saved</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">99%</span>
-                            <span class="metric-label">Accuracy</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <!-- Monitoring LKPD -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="bpk" data-aos="fade-up" data-aos-delay="550">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img src="assets/img/project/monitoring-lkpd.jpg" alt="Monitoring LKPD" class="img-fluid">
+                <div class="category-badge badge-bpk">BPK</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Monitoring LKPD</h3>
+                <p class="client">Badan Pemeriksa Keuangan</p>
+                <p class="description">Financial report monitoring and analysis system</p>
+                <div class="tech-stack">
+                  <span class="badge">.NET Core</span>
+                  <span class="badge">Vue.js</span>
+                  <span class="badge">ElasticSearch</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> Automated data collection</li>
+                  <li><i class="bi bi-check-circle"></i> Real-time analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Zentra -->
-                  <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="portfolio-card">
-                      <div class="portfolio-image">
-                        <img src="assets/img/project/zentra.jpg" alt="Zentra - Omni-Channel Business Solution" class="img-fluid">
-                        <div class="portfolio-overlay">
-                          <div class="overlay-content">
-                            <h4>Key Achievements</h4>
-                            <ul>
-                              <li>Unified order management across channels</li>
-                              <li>Real-time inventory synchronization</li>
-                              <li>Automated order fulfillment</li>
-                              <li>Enhanced customer tracking</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="portfolio-content">
-                        <h3>Zentra</h3>
-                        <p class="client">Omni-Channel Business Solution</p>
-                        <p class="description">Comprehensive platform for order management, inventory control, and customer tracking across multiple sales channels</p>
-                        <div class="tech-stack">
-                          <span class="badge">Go 1.21</span>
-                          <span class="badge">PostgreSQL</span>
-                          <span class="badge">React</span>
-                          <span class="badge">Redis</span>
-                          <span class="badge">RabbitMQ</span>
-                          <span class="badge">Elasticsearch</span>
-                        </div>
-                        <ul class="features">
-                          <li><i class="bi bi-check-circle"></i> Multi-channel Order Management</li>
-                          <li><i class="bi bi-check-circle"></i> Inventory Synchronization</li>
-                          <li><i class="bi bi-check-circle"></i> Customer Relationship Management</li>
-                          <li><i class="bi bi-check-circle"></i> Analytics & Reporting</li>
-                        </ul>
-                        <div class="project-metrics">
-                          <div class="metric">
-                            <span class="metric-value">100%</span>
-                            <span class="metric-label">Order Accuracy</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">Real-time</span>
-                            <span class="metric-label">Inventory Sync</span>
-                          </div>
-                          <div class="metric">
-                            <span class="metric-value">360°</span>
-                            <span class="metric-label">Customer View</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          <!-- CargoERP Platform -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2193b0, #6dd5ed);">
+                  <div class="content">
+                    <div class="portfolio-icon"><i class="bi bi-box-seam"></i></div>
+                    <h4>Boox Platform</h4>
+                    <div class="project-type">Logistics Suite</div>
                   </div>
                 </div>
+                <div class="category-badge badge-commercial">Commercial</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>CargoERP Platform</h3>
+                <p class="client">CargoERP Pte Ltd | Singapore</p>
+                <p class="description">Comprehensive logistics solutions enabling seamless fulfillment and international operations</p>
+                <div class="tech-stack">
+                  <span class="badge">Go 1.21</span>
+                  <span class="badge">Vue.js</span>
+                  <span class="badge">Electron</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> 60% operations streamlined</li>
+                  <li><i class="bi bi-check-circle"></i> 85% process automation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ent-Vision -->
+          <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="650">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                  <div class="content">
+                    <div class="portfolio-icon"><i class="bi bi-cpu"></i></div>
+                    <h4>AI Solutions</h4>
+                    <div class="project-type">Enterprise Intelligence</div>
+                  </div>
+                </div>
+                <div class="category-badge badge-commercial">Commercial</div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Ent-Vision</h3>
+                <p class="client">Enterprise AI & Automation</p>
+                <p class="description">AI-powered platform for intelligent process automation and business optimization</p>
+                <div class="tech-stack">
+                  <span class="badge">.NET Core</span>
+                  <span class="badge">AI/ML</span>
+                  <span class="badge">Azure</span>
+                </div>
+                <ul class="features">
+                  <li><i class="bi bi-check-circle"></i> 90% automation achieved</li>
+                  <li><i class="bi bi-check-circle"></i> 75% manual work reduction</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Portfolio Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Certifications & Achievements</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Professional certifications and technical achievements</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4">
-          <div class="col-12">
-            <div class="certifications-wrapper">
-              <div class="certifications-block" data-aos="fade-up">
-                <div class="row g-4">
-                  <!-- WPF Certification -->
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="certification-card">
-                      <div class="certification-image">
-                        <img src="assets/img/certificate/1.jpg" alt="Introduction To Windows Presentation Foundation (WPF)" class="img-fluid">
-                      </div>
-                      <div class="certification-content">
-                        <h3>Introduction To Windows Presentation Foundation (WPF)</h3>
-                        <p>Microsoft</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Microservices Architecture -->
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="certification-card">
-                      <div class="certification-image">
-                        <img src="assets/img/certificate/2.jpg" alt="A Beginner's Guide to a Microservices Architecture" class="img-fluid">
-                      </div>
-                      <div class="certification-content">
-                        <h3>A Beginner's Guide to a Microservices Architecture</h3>
-                        <p>Udemy</p>
-                        <a href="https://www.udemy.com/certificate/UC-VG04DYJT/" class="certificate-link">View Certificate</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Microservices Design -->
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="certification-card">
-                      <div class="certification-image">
-                        <img src="assets/img/certificate/3.jpg" alt="Microservices: Designing Highly Scalable Systems" class="img-fluid">
-                      </div>
-                      <div class="certification-content">
-                        <h3>Microservices: Designing Highly Scalable Systems</h3>
-                        <p>Udemy</p>
-                        <a href="https://www.udemy.com/certificate/UC-4TNOB0ZL/" class="certificate-link">View Certificate</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- MongoDB Certification -->
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="certification-card">
-                      <div class="certification-image">
-                        <img src="assets/img/certificate/4.jpg" alt="MongoDB Essentials" class="img-fluid">
-                      </div>
-                      <div class="certification-content">
-                        <h3>MongoDB Essentials - Understand the Basics of MongoDB</h3>
-                        <p>Udemy</p>
-                        <a href="https://www.udemy.com/certificate/UC-Y2Y8KRUX/" class="certificate-link">View Certificate</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Testimonials Section -->
+    </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Expert software engineering services to transform your business needs into robust, scalable solutions</p>
-      </div>
-
+    <section id="services" class="section light-background">
       <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Expert software engineering services to transform your business needs into robust, scalable solutions</p>
+        </div>
+
         <div class="row g-4">
-          <!-- Enterprise Application Development -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-building-gear"></i>
               </div>
               <h3>Enterprise Application Development</h3>
-              <p>Transform your business processes with custom-built enterprise applications that scale with your growth.</p>
+              <p>Transform business processes with custom-built enterprise applications that scale with growth.</p>
               <ul class="service-features">
                 <li><i class="bi bi-check-circle"></i> Microservices architecture</li>
-                <li><i class="bi bi-check-circle"></i> High-performance backend systems</li>
-                <li><i class="bi bi-check-circle"></i> Scalable database solutions</li>
-                <li><i class="bi bi-check-circle"></i> Secure authentication & authorization</li>
-                <li><i class="bi bi-check-circle"></i> API development & integration</li>
+                <li><i class="bi bi-check-circle"></i> High-performance backend</li>
+                <li><i class="bi bi-check-circle"></i> Scalable databases</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Improved operational efficiency</li>
-                  <li>Reduced development costs</li>
-                  <li>Enhanced system reliability</li>
-                  <li>Future-proof architecture</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- Cloud-Native Solutions -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-cloud-arrow-up"></i>
               </div>
               <h3>Cloud-Native Solutions</h3>
-              <p>Leverage the power of cloud computing with modern, containerized applications built for scalability.</p>
+              <p>Leverage cloud computing with modern, containerized applications built for scalability.</p>
               <ul class="service-features">
                 <li><i class="bi bi-check-circle"></i> Docker containerization</li>
-                <li><i class="bi bi-check-circle"></i> Kubernetes orchestration</li>
-                <li><i class="bi bi-check-circle"></i> CI/CD pipeline setup</li>
-                <li><i class="bi bi-check-circle"></i> Cloud infrastructure design</li>
-                <li><i class="bi bi-check-circle"></i> Performance optimization</li>
+                <li><i class="bi bi-check-circle"></i> CI/CD pipelines</li>
+                <li><i class="bi bi-check-circle"></i> Cloud infrastructure</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Reduced infrastructure costs</li>
-                  <li>Improved scalability</li>
-                  <li>Enhanced reliability</li>
-                  <li>Faster deployment cycles</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- System Architecture & Consulting -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-diagram-3"></i>
               </div>
               <h3>System Architecture & Consulting</h3>
-              <p>Expert guidance in designing and implementing robust software architectures for your business needs.</p>
+              <p>Expert guidance in designing and implementing robust software architectures.</p>
               <ul class="service-features">
-                <li><i class="bi bi-check-circle"></i> System design & architecture</li>
+                <li><i class="bi bi-check-circle"></i> System design</li>
                 <li><i class="bi bi-check-circle"></i> Performance optimization</li>
-                <li><i class="bi bi-check-circle"></i> Code review & refactoring</li>
-                <li><i class="bi bi-check-circle"></i> Technical documentation</li>
-                <li><i class="bi bi-check-circle"></i> Best practices implementation</li>
+                <li><i class="bi bi-check-circle"></i> Best practices</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Improved system maintainability</li>
-                  <li>Reduced technical debt</li>
-                  <li>Enhanced team productivity</li>
-                  <li>Better code quality</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- Database Solutions -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-database"></i>
               </div>
               <h3>Database Solutions</h3>
-              <p>Optimize your data management with efficient database design and implementation.</p>
+              <p>Optimize data management with efficient database design and implementation.</p>
               <ul class="service-features">
                 <li><i class="bi bi-check-circle"></i> PostgreSQL optimization</li>
-                <li><i class="bi bi-check-circle"></i> Database schema design</li>
+                <li><i class="bi bi-check-circle"></i> Schema design</li>
                 <li><i class="bi bi-check-circle"></i> Query optimization</li>
-                <li><i class="bi bi-check-circle"></i> Data migration</li>
-                <li><i class="bi bi-check-circle"></i> Backup & recovery solutions</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Improved data performance</li>
-                  <li>Enhanced data security</li>
-                  <li>Reduced storage costs</li>
-                  <li>Better data accessibility</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- API Development -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-code-square"></i>
               </div>
               <h3>API Development</h3>
-              <p>Build robust, secure, and scalable APIs to power your applications and integrations.</p>
+              <p>Build robust, secure, and scalable APIs to power applications and integrations.</p>
               <ul class="service-features">
                 <li><i class="bi bi-check-circle"></i> RESTful API design</li>
-                <li><i class="bi bi-check-circle"></i> GraphQL implementation</li>
-                <li><i class="bi bi-check-circle"></i> API documentation</li>
-                <li><i class="bi bi-check-circle"></i> Authentication & authorization</li>
-                <li><i class="bi bi-check-circle"></i> Rate limiting & caching</li>
+                <li><i class="bi bi-check-circle"></i> GraphQL</li>
+                <li><i class="bi bi-check-circle"></i> Rate limiting</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Improved system integration</li>
-                  <li>Enhanced developer experience</li>
-                  <li>Better API security</li>
-                  <li>Increased system flexibility</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- Technical Leadership -->
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
             <div class="service-card">
               <div class="service-icon">
                 <i class="bi bi-people"></i>
               </div>
               <h3>Technical Leadership</h3>
-              <p>Guide your development team with expert technical leadership and mentorship.</p>
+              <p>Guide development teams with expert technical leadership and mentorship.</p>
               <ul class="service-features">
                 <li><i class="bi bi-check-circle"></i> Team mentoring</li>
-                <li><i class="bi bi-check-circle"></i> Code review & standards</li>
-                <li><i class="bi bi-check-circle"></i> Technical decision making</li>
-                <li><i class="bi bi-check-circle"></i> Best practices implementation</li>
+                <li><i class="bi bi-check-circle"></i> Code reviews</li>
                 <li><i class="bi bi-check-circle"></i> Architecture guidance</li>
               </ul>
-              <div class="service-benefits">
-                <h4>Benefits for Your Business:</h4>
-                <ul>
-                  <li>Improved team productivity</li>
-                  <li>Enhanced code quality</li>
-                  <li>Better technical decisions</li>
-                  <li>Faster project delivery</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Common questions about my services, work process, and collaboration approach</p>
-      </div>
-
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
       <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about services, work process, and collaboration approach</p>
+        </div>
+
         <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-container">
+          <div class="col-lg-10">
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
               <div class="faq-item faq-active">
                 <h3>How do you handle remote work collaboration?</h3>
                 <div class="faq-content">
-                  <p>I have extensive experience working remotely with teams across different time zones. My collaboration approach includes:</p>
-                  <ul>
-                    <li>Regular communication through video calls and chat</li>
-                    <li>Flexible scheduling to accommodate different time zones</li>
-                    <li>Clear documentation and code comments</li>
-                    <li>Agile methodologies and sprint planning</li>
-                    <li>Version control and collaborative development tools</li>
-                  </ul>
+                  <p>I have extensive experience working remotely with teams across different time zones. My approach includes regular communication through video calls and chat, flexible scheduling, clear documentation, and agile methodologies.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -1140,15 +2103,7 @@
               <div class="faq-item">
                 <h3>What types of projects do you specialize in?</h3>
                 <div class="faq-content">
-                  <p>I specialize in enterprise-level applications and solutions, including:</p>
-                  <ul>
-                    <li>Microservices-based architectures</li>
-                    <li>Cloud-native applications</li>
-                    <li>Database design and optimization</li>
-                    <li>API development and integration</li>
-                    <li>System architecture and consulting</li>
-                  </ul>
-                  <p>My expertise spans both backend and frontend development, with a strong focus on scalable and maintainable solutions.</p>
+                  <p>I specialize in enterprise-level applications including microservices-based architectures, cloud-native applications, database design and optimization, API development, and system architecture consulting.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -1156,382 +2111,117 @@
               <div class="faq-item">
                 <h3>What is your development process?</h3>
                 <div class="faq-content">
-                  <p>My development process follows industry best practices:</p>
-                  <ol>
-                    <li>Detailed requirements gathering and analysis</li>
-                    <li>Architecture design and planning</li>
-                    <li>Iterative development with regular client feedback</li>
-                    <li>Comprehensive testing and quality assurance</li>
-                    <li>Documentation and knowledge transfer</li>
-                    <li>Post-deployment support and maintenance</li>
-                  </ol>
-                  <p>I emphasize clean code, maintainability, and scalability throughout the development lifecycle.</p>
+                  <p>My process includes detailed requirements gathering, architecture design and planning, iterative development with regular feedback, comprehensive testing, documentation, and post-deployment support.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>How do you ensure code quality and security?</h3>
-                <div class="faq-content">
-                  <p>Quality and security are paramount in my development approach:</p>
-                  <ul>
-                    <li>Following SOLID principles and design patterns</li>
-                    <li>Implementing automated testing (unit, integration, E2E)</li>
-                    <li>Regular code reviews and static code analysis</li>
-                    <li>Security best practices and vulnerability scanning</li>
-                    <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
-                    <li>Regular security updates and patch management</li>
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-            </div>
-          </div><!-- End Faq Column-->
-        </div>
-      </div>
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
-              <div class="section-category mb-3">Contact</div>
-              <h2 class="display-5 mb-4">Available for Remote Work Worldwide</h2>
-              <p class="lead mb-4">I'm open to remote opportunities and collaborations across different time zones. Let's discuss how we can work together to build amazing software solutions.</p>
-
-              <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3"></i>
-                  <span>nurul.hadi@outlook.com</span>
-                </div>
-
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-telephone me-3"></i>
-                  <span>(+62) 81284093225</span>
-                </div>
-
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-linkedin me-3"></i>
-                  <span>linkedin.com/in/nhadii</span>
-                </div>
-
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-github me-3"></i>
-                  <span>github.com/NHadi</span>
-                </div>
-
-                <div class="timezone-info mb-4">
-                  <h5>Working Hours</h5>
-                  <p>Flexible schedule to accommodate different time zones</p>
-                  <p>Available for meetings and collaboration across multiple time zones</p>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <div class="section-category mb-3">Contact</div>
+          <h2 class="display-5 mb-4">Building AI Automation for Everyone</h2>
+          <p class="lead mb-4">Founder of Amanah Agent AI - building no-code AI automation platform. Open to collaborations and partnerships.</p>
+
+          <div class="contact-info mt-5 d-flex flex-column align-items-center gap-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope-at me-2"></i>
+              <span>nurulhadi@amanahagent.cloud</span>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-linkedin me-2"></i>
+              <span>linkedin.com/in/nhadii</span>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-github me-2"></i>
+              <span>github.com/NHadi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Component JS Files -->
-  <script src="assets/js/components/navbar.js"></script>
-  <script src="assets/js/components/footer.js"></script>
-  <script src="assets/js/components/loader.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <style>
-  .portfolio-placeholder {
-    height: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .portfolio-placeholder .content {
-    max-width: 100%;
-  }
-
-  .portfolio-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .portfolio-icon i {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 1rem;
-    border-radius: 50%;
-  }
-
-  .project-type {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    margin-top: 0.5rem;
-  }
-
-  .tech-badges {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .tech-badge {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-  }
-
-  .portfolio-card {
-    border: none;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-  }
-
-  .portfolio-card:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    transform: translateY(-5px);
-  }
-
-  .portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
-    opacity: 0;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .portfolio-card:hover .portfolio-overlay {
-    opacity: 1;
-  }
-
-  .overlay-content {
-    color: #fff;
-    transform: translateY(10px);
-    transition: transform 0.3s ease;
-    opacity: 0;
-  }
-
-  .portfolio-card:hover .overlay-content {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  .portfolio-content {
-    padding: 2rem;
-  }
-
-  .portfolio-content h3 {
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-
-  .client {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .tech-stack {
-    margin: 1.5rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .badge {
-    background: #f8f9fa;
-    color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 500;
-    border: 1px solid #dee2e6;
-  }
-
-  .features {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-  }
-
-  .features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
-    color: #555;
-  }
-
-  .features i {
-    color: #4CAF50;
-    margin-right: 0.75rem;
-  }
-
-  .project-metrics {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
-  }
-
-  .metric {
-    text-align: center;
-  }
-
-  .metric-value {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007bff;
-  }
-
-  .metric-label {
-    font-size: 0.8rem;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  /* Updated filter button styles */
-  .portfolio-filters {
-    text-align: center;
-    margin: 2rem 0 3rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .filter-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    background: #f8f9fa;
-    color: #495057;
-    border-radius: 12px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .filter-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-  }
-
-  .filter-btn i {
-    font-size: 1.1rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .filter-btn span {
-    position: relative;
-    z-index: 2;
-  }
-
-  .filter-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-
-  .filter-btn.active {
-    color: #fff;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-  }
-
-  .filter-btn.active::before {
-    opacity: 1;
-  }
-
-  .filter-btn:not(.active):hover {
-    background: #e9ecef;
-    color: #007bff;
-  }
-
-  @media (max-width: 768px) {
-    .portfolio-filters {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 0 1rem;
-    }
-
-    .filter-btn {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-  </style>
-
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    // Portfolio Filter Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        button.classList.add('active');
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          button.classList.add('active');
 
-        const filter = button.getAttribute('data-filter');
+          const filter = button.getAttribute('data-filter');
 
-        portfolioItems.forEach(item => {
-          if (filter === 'all' || item.getAttribute('data-category') === filter) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
+          portfolioItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = 'block';
+              // Re-trigger AOS animation
+              const aosElements = item.querySelectorAll('[data-aos]');
+              aosElements.forEach(el => {
+                el.classList.remove('aos-animate');
+                void el.offsetWidth; // Trigger reflow
+                el.classList.add('aos-animate');
+              });
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // FAQ Toggle
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const header = item.querySelector('h3');
+        header.addEventListener('click', () => {
+          const isActive = item.classList.contains('faq-active');
+          // Close all
+          faqItems.forEach(i => i.classList.remove('faq-active'));
+          // Open clicked if wasn't active
+          if (!isActive) {
+            item.classList.add('faq-active');
           }
         });
       });
     });
-  });
+
+    // Initialize GLightbox for portfolio images
+    const lightbox = GLightbox({
+      selector: '.portfolio-lightbox',
+      loop: true,
+      zoomable: true,
+      touchNavigation: true,
+      keyboardNavigation: true,
+      autoplayVideos: false
+    });
   </script>
 </body>
 </html>
