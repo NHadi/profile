@@ -1,0 +1,12 @@
+# robots.txt for nhadi.github.io/profile
+
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+Disallow: /assets/scss/
+Disallow: /.git/
+
+Sitemap: https://nhadi.github.io/profile/sitemap.xml
+
+# Crawl delay (respectful to servers)
+Crawl-delay: 1
